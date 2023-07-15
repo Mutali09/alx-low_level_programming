@@ -1,16 +1,2 @@
-import subprocess
-import os
-
-# Input C file name
-CFILE = "main.c"
-
-# Output file name
-ASMFILE = os.path.splitext(CFILE)[0] + ".s"
-
-# Generate assembly code using GCC
-subprocess.run(["gcc", "-S", "-masm=intel", CFILE])
-
-# Rename the generated assembly file
-os.rename("main.s", ASMFILE)
-
-print("Assembly code generated and saved as", ASMFILE)
+#!/bin/bash
+gcc -s -masm=intel $CFILE
