@@ -5,6 +5,7 @@
  * Return: Always 0.
  */
 int main(void)
+	
 {
 	printf("Size of char: %zu byte(s)\n", sizeof(char));
 	printf("Size of short: %zu byte(s)\n", sizeof(short));
