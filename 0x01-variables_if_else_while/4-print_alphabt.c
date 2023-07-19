@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
  *main - Entry point
+ *
  *Description: 'print alphabets except q and e'
- *Rerturn: Always 0
+ *Rerturn: Always 0 (Success)
  */
 int main(void)
 {
