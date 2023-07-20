@@ -1,5 +1,5 @@
 #include "main.h"
-#inlude <stdio.h>
+#include <stdio.h>
 /**
  * print_number - Prints an integer.
  * @a: The integer to print
@@ -11,12 +11,12 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		n *= -1;
-		k = n;
-		_putchar('-');
+	n *= -1;
+	k = n;
+	_putchar('-');
 	}
 	k /= 10;
 	if (k != 0)
-		print number(k);
+	print_number(k);
 	-putchar((unsigned int) n % 10 + '0');
 }
