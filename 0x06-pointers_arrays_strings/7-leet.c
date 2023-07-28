@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * leet - encodes vowels into numbers.
- * @s: analyzed string.
+ * leet - change vowels into numbers.
+ * @s: analized string.
  *
- * Return: String of changed vowels
+ * Return: String with all vowels changed.
  */
 char *leet(char *s)
 {
-	char a[] = aeotlAEOTL;
+	char a[] = "aeotlAEOTL";
 	char n[] = "4307143071";
 	int i = 0;
 	int j;
