@@ -12,7 +12,7 @@ int count_word(char *s)
 	int flag, c, q;
 
 	flag = 0;
-	w = 0;
+	q = 0;
 	for (c = 0; s[c] != '\0'; c++)
 	{
 		if (s[c] == ' ')
@@ -20,10 +20,10 @@ int count_word(char *s)
 		else if (flag == 0)
 		{
 			flag = 1;
-		w++;
+		q++;
 		}
 	}
-	return (w);
+	return (q);
 }
 /**
  * **strtow - splits a string into words
@@ -52,15 +52,15 @@ char **strtow(char *str)
 			if (c)
 			{
 				end = i;
-				trm = (char *) malloc(sizeof(char) * (c + 1));
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
 					*tmp++ = str[start++];
 				*tmp = '\0';
 				matrix[k] = tmp - c;
-				k++
-					c = 0;
+				k++;
+				c = 0;
 			}
 		}
 		else if (c++ == 0)
