@@ -25,14 +25,14 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	arr = (char *)main;
-	for (i = 0; i < bytes; i++)
+	for (p = 0; p < bytes; p++)
 	{
-		if (i == bytes - 1)
+		if (p == bytes - 1)
 		{
-			printf("%02hhx\n", arr[i]);
+			printf("%02hhx\n", arr[p]);
 			break;
 		}
-		printf("%02hhx ", arr[i]);
+		printf("%02hhx ", arr[p]);
 	}
 	return (0);
 }
