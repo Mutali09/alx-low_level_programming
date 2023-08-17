@@ -1,11 +1,11 @@
+#include <stdio.h>
 #include "main.h"
 /*
- * _strncpy - copy a string
+ * _strncpy - find and copy the length of a string
  * @dest: input value
  * @src: input value
  * @n: input value
- *
- * Return: dest
+ * Return: destination
  */
 char *_strncpy(char *dest, char *src, int n)
 {
